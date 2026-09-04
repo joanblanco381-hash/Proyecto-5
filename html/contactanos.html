@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto | Joan Blanco</title>
+
+
+  <!-- Ruta corregida: Sube un nivel para encontrar style.css en la raíz -->
+  <link rel="stylesheet" href="/css/contacto.css">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+  <header class="header">
+    <nav class="nav-container">
+      <a href="../index.html" class="logo">&lt;JoanBlanco /&gt;</a>
+      <ul class="nav-links">
+        <li><a href="../index.html#about">Sobre mí</a></li>
+        <li><a href="../index.html#skills">Habilidades</a></li>
+        <li><a href="../index.html#projects">Proyectos</a></li>
+        <li><a href="contactanos.html" class="active">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="contact-page-container">
+    <section class="section-container">
+      <h1 class="section-title">Ponte en Contacto</h1>
+      <p class="section-subtitle">¿Tienes alguna propuesta laboral, proyecto o duda? Envíame un mensaje.</p>
+
+      <div class="contact-wrapper">
+        <!-- Reemplaza tu-correo@gmail.com por tu correo real de Gmail -->
+        <form id="contact-form" action="https://formsubmit.co/tu-correo@gmail.com" method="POST" class="contact-form-page">
+          
+          <div class="form-group">
+            <label for="name">Nombre Completo</label>
+            <input type="text" id="name" name="name" placeholder="Tu nombre" required>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Correo Electrónico</label>
+            <input type="email" id="email" name="email" placeholder="tu@correo.com" required>
+          </div>
+
+          <div class="form-group">
+            <label for="subject">Asunto</label>
+            <input type="text" id="subject" name="subject" placeholder="Motivo de tu mensaje" required>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Mensaje</label>
+            <textarea id="message" name="message" rows="5" placeholder="Escribe tu mensaje aquí..." required></textarea>
+          </div>
+
+          <button type="submit" id="form-btn" class="btn btn-primary btn-large">
+            <i class="fas fa-paper-plane"></i> Enviar Mensaje
+          </button>
+          
+          <p id="form-status" class="form-status"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2026 Joan Sebastian Blanco Ruiz. Todos los derechos reservados.</p>
+  </footer>
+
+  <!-- Ruta corregida: Sube un nivel y entra a js/main.js -->
+  <script src="/js/main.js"></script>
+    <script src="/js/contacto.js"></script>
+
+</body>
+</html>

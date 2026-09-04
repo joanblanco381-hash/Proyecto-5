@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <!-- Meta viewport clave para la adaptabilidad en móviles -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portafolio profesional de Joan Sebastian Blanco Ruiz - Desarrollador de Software">
+  <title>Joan Blanco | Portafolio Profesional</title>
+
+  <!-- Fuente de Google Fonts para un aspecto limpio -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Iconos de FontAwesome para botones y habilidades -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Hoja de estilos principal -->
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/contacto.css">
+</head>
+<body>
+
+  <!-- NAVEGACIÓN PRINCIPAL -->
+  <header class="header">
+    <nav class="nav-container">
+      <a href="#" class="logo">&lt;JoanBlanco /&gt;</a>
+      <ul class="nav-links">
+        <li><a href="#about">Sobre mí</a></li>
+        <li><a href="#skills">Habilidades</a></li>
+        <li><a href="#projects">Proyectos</a></li>
+        <li><a href="#contact">Contactar</a></li>
+        <li><a href="html/contactanos.html"></a></li>
+      </ul>
+    </nav>
+  </header>
+
+
+  <main>
+    <!-- SECCIÓN HERO (Presentación Principal) -->
+    <section id="hero" class="hero-section">
+      <div class="hero-content">
+        <span class="badge">Bienvenido a mi portafolio</span>
+        <h1>Hola, soy <span class="highlight">Joan Sebastian Blanco</span></h1>
+        <p class="subtitle">Estudiante de Desarrollo de Software apasionado por crear soluciones web limpias, funcionales y accesibles.</p>
+        <div class="hero-buttons">
+          <a href="#projects" class="btn btn-primary">Ver mis proyectos</a>
+          <a href="#contact" class="btn btn-secondary">Contactar</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCIÓN SOBRE MÍ -->
+    <section id="about" class="section-container">
+      <h2 class="section-title">Sobre mí</h2>
+      <div class="about-content">
+        <p>
+          Soy estudiante de la tecnología en Análisis y Desarrollo de Software (ADSO). Me enfoco en construir aplicaciones web eficientes utilizando buenas prácticas de programación, estructuración semántica y control de versiones profesional.
+        </p>
+      </div>
+    </section>
+
+    <!-- SECCIÓN HABILIDADES TÉCNICAS -->
+    <section id="skills" class="section-container">
+      <h2 class="section-title">Habilidades Técnicas</h2>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <i class="fab fa-html5 skill-icon"></i>
+          <h3>HTML5</h3>
+          <p>Estructura semántica y accesibilidad web.</p>
+        </div>
+        <div class="skill-card">
+          <i class="fab fa-css3-alt skill-icon"></i>
+          <h3>CSS3</h3>
+          <p>Diseño responsive con Flexbox, Grid y variables CSS.</p>
+        </div>
+        <div class="skill-card">
+          <i class="fab fa-js skill-icon"></i>
+          <h3>JavaScript</h3>
+          <p>Lógica de programación, manipulación del DOM y consumo de APIs.</p>
+        </div>
+        <div class="skill-card">
+          <i class="fab fa-git-alt skill-icon"></i>
+          <h3>Git & GitHub</h3>
+          <p>Control de versiones con Git Flow y Conventional Commits.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCIÓN PROYECTOS DESTACADOS -->
+    <section id="projects" class="section-container">
+      <h2 class="section-title">Proyectos Destacados</h2>
+      <p class="section-subtitle">Una muestra de las aplicaciones y sitios web que he construido.</p>
+
+      <div class="projects-grid">
+
+        <!-- TARJETA DE PROYECTO 1 -->
+        <article class="project-card">
+          <div class="card-image-container">
+            <!-- Recuerda colocar imágenes optimizadas (.webp) en tu carpeta assets/images -->
+            <img src="img/WhatsApp Image 2026-09-03 at 11.38.01 PM.jpeg" alt="Captura de pantalla de la plataforma EcoMarket" loading="lazy">
+          </div>
+          <div class="card-content">
+            <h3>EcoMarket</h3>
+            <p>Plataforma e-commerce centrada en productos ecológicos. Incluye un catálogo interactivo, diseño adaptativo modular y paneles informativos de impacto ambiental.</p>
+            <ul class="tech-tags">
+              <li>HTML5</li>
+              <li>CSS3</li>
+              <li>JavaScript</li>
+            </ul>
+            <div class="card-links">
+              <!-- Reemplaza las URLs por las de tu repositorio real -->
+              <a href="https://github.com/joanblanco381-hash/EcoMarket-Joan-Sebastian-Blanco-Ruiz.git" target="_blank" rel="noopener noreferrer" class="btn-link">
+                <i class="fab fa-github"></i> Código
+              </a>
+              <a href="https://github.com/joanblanco381-hash/EcoMarket-Joan-Sebastian-Blanco-Ruiz.git" target="_blank" rel="noopener noreferrer" class="btn-link btn-primary-link">
+                <i class="fas fa-external-link-alt"></i> Demo
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- TARJETA DE PROYECTO 2 -->
+        <article class="project-card">
+          <div class="card-image-container">
+            <img src="img/iron.jpeg" alt="Captura de pantalla de la app Iron Rebel Garage" loading="lazy">
+          </div>
+          <div class="card-content">
+            <h3>Iron Rebel Garage</h3>
+            <p>Aplicación web para la exhibición y gestión de motocicletas con carrito de compras, persistencia de datos mediante LocalStorage y catálogo interactivo.</p>
+            <ul class="tech-tags">
+              <li>HTML5</li>
+              <li>CSS3</li>
+              <li>JavaScript</li>
+              <li>LocalStorage</li>
+            </ul>
+            <div class="card-links">
+              <a href="https://github.com/joanblanco381-hash/proyecto-final-ia.git" target="_blank" rel="noopener noreferrer" class="btn-link">
+                <i class="fab fa-github"></i> Código
+              </a>
+              <a href="https://github.com/joanblanco381-hash/proyecto-final-ia.git" target="_blank" rel="noopener noreferrer" class="btn-link btn-primary-link">
+                <i class="fas fa-external-link-alt"></i> Demo
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- ESPACIO RESERVADO PARA OTRO PROYECTO FUTURO -->
+        <article class="project-card">
+          <div class="card-image-container">
+            <img src="img/venta.jpeg" alt="Proyecto en desarrollo" loading="lazy">
+          </div>
+          <div class="card-content">
+            <h3>Venta de boletas virtual</h3>
+            <p>Descripción breve de la solución o aplicación desarrollada, destacando los problemas resueltos y sus funciones principales.</p>
+            <ul class="tech-tags">
+              <li>HTML5</li>
+              <li>CSS3</li>
+              <li>Git</li>
+            </ul>
+            <div class="card-links">
+              <a href="https://github.com/raulfelipecalvoviancha883-a11y/Proyecto-final-.git" target="_blank" rel="noopener noreferrer" class="btn-link">
+                <i class="fab fa-github"></i> Código
+              </a>
+              <a href="https://github.com/raulfelipecalvoviancha883-a11y/Proyecto-final-.git" target="_blank" rel="noopener noreferrer" class="btn-link btn-primary-link">
+                <i class="fas fa-external-link-alt"></i> Demo
+              </a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- SECCIÓN CONTACTO -->
+    <section id="contact" class="section-container">
+      <h2 class="section-title">Contacto</h2>
+      <p class="section-subtitle">¿Tienes alguna pregunta o propuesta? ¡Hablemos!</p>
+      
+      <div class="contact-card">
+        <a href="html/contactanos.html" class="btn btn-primary btn-large">
+          <i class="fas fa-envelope"></i> Enviar Correo Electrónico
+        </a>
+        <div class="social-links">
+          <a href="https://github.com/joanblanco381-hash" target="_blank" rel="noopener noreferrer" aria-label="Perfil de GitHub">
+            <i class="fab fa-github"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- PIE DE PÁGINA -->
+  <footer class="footer">
+    <p>&copy; 2026 Joan Sebastian Blanco Ruiz. Desarrollado con HTML5 y CSS3.</p>
+  </footer>
+    <script src="/js/main.js"></script>
+    <script src="/js/contacto.js"></script> 
+
+</body>
+</html>
